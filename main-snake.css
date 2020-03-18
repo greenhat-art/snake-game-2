@@ -1,0 +1,134 @@
+
+body {
+	margin:0px;
+	padding:0px;
+    background-color: rgb(2, 24, 15);
+}
+
+#game-area {
+	margin:10px;
+	padding:0px;
+    background-color: rgb(64, 48, 214);
+}
+
+#mode-wrapper {
+    color: #ffffff;
+    font-family: Verdana, arial, helvetica, sans-serif;
+    font-size: 14px;
+
+}
+
+#game-area:focus { outline: none; }
+
+a.snake-link, a.snake-link:link, a.snake-link:visited {
+  color: rgb(84, 218, 252);
+}
+
+a.snake-link:hover {
+  color: rgb(255, 84, 218);
+}
+
+.snake-pause-screen {
+    font-family: Verdana, arial, helvetica, sans-serif;
+    font-size: 14px;
+    position:absolute;
+    width:300px;
+    height:80px;
+    text-align:center;
+    top:50%;
+    left:50%;
+    margin-top:-40px;
+    margin-left:-150px;
+    display:none;
+    background-color:black;
+    color:white;
+}
+
+.snake-panel-component {
+    position: absolute;
+    font-family: Verdana, arial, helvetica, sans-serif;
+    font-size: 14px;
+    color: #9eac52;
+    text-align: center;
+    background-color: rgb(4, 78, 43);
+    padding: 8px;
+    margin: 0px;
+}
+
+.snake-snakebody-block {
+    margin: 0px;
+    padding: 0px;
+    background-color: #FF0000;
+    position: absolute;
+    border: 0px solid #d85454;
+    background-repeat: no-repeat;
+}
+
+.snake-snakebody-alive {
+   background-image: url('./images/snakeblock.png');
+}
+.snake-snakebody-dead {
+   background-image: url('./images/deadblock.png');
+}
+
+.snake-food-block {
+    margin: 0px;
+    padding: 0px;
+    background-color: #FF0000;
+    border: 0px solid #000080;
+    position: absolute;
+}
+
+.snake-playing-field {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    background-color: #0000A8;
+    border: 0px solid #0000A8;
+}
+
+.snake-game-container {
+    margin: 0px;
+    padding: 0px;
+    border-width: 0px;
+    border-style: none;
+    zoom: 1;
+    background-color: #FC5454;
+    position: relative;
+}
+
+.snake-welcome-dialog {
+    padding: 8px;
+    margin: 0px;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Verdana, arial, helvetica, sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    /*height: 150px;*/
+    margin-top: -100px;
+    margin-left: -158px;
+    text-align: center;
+    display: block;
+}
+
+.snake-try-again-dialog, .snake-win-dialog {
+    padding: 8px;
+    margin: 0px;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Verdana, arial, helvetica, sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 100px;
+    margin-top: -75px;
+    margin-left: -158px;
+    text-align: center;
+    display: none;
+}
